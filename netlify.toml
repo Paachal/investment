@@ -2,7 +2,7 @@
 
 [build]
   command = "gunicorn -D -w 4 -b 0.0.0.0:$PORT app:app"
-  publish = "/opt/build/repo/INVESTMENT"
+  publish = "INVESTMENT"
 
 [[redirects]]
   from = "/*"
