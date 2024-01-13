@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 app.template_folder = 'templates'
-app.config['APPLICATION_ROOT'] = '/my-flask-app'
+app.config['APPLICATION_ROOT'] = '/INVESTMENT'  # Update the application root
 
 @app.route('/')
 def index():
@@ -59,4 +59,3 @@ def withdraw():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
